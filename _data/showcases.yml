@@ -13,6 +13,9 @@
 - id: conrad
   title: Conrad Wise
   synopsis: A chat bot that knows everything
+- id: wali
+  title: Wali
+  synopsis: Browse any movie or tv show out there and arrange them on a list to watch them later.
 - id: klickle
   title: Klickle
   synopsis: Your Town. Your Way.
