@@ -16,7 +16,7 @@ uxConcepts:
 jsConcepts:
 - data-model
 preview-image: weather-app.png
-preview-video: weather-app.mp4
+preview-video: AOFOagRDQaw
 ---
 This examples shows how to make a cool weather app with animated weather icons.
 

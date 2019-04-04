@@ -34,7 +34,7 @@ uxConcepts:
 - Toggle
 - Shadow
 preview-image: vinyl-store.png
-preview-video: vinyl-store.mp4
+preview-video: G291WLl4GE8
 ---
 This example shows how to create an immersive swipeable cards experience. The screen pops with color and you can even interact with the products shown!
 

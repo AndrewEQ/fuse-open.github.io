@@ -14,7 +14,7 @@ uxConcepts:
 - Scale
 - Change
 preview-image: page-control-transitions.png
-preview-video: page-control-transitions.mp4
+preview-video: n33NWCwMEKU
 ---
 This example shows how you can make your own transitions for pages within a `PageControl`.
 

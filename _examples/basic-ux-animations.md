@@ -18,7 +18,7 @@ uxConcepts:
 - Tapped
 - Change
 preview-image: basic-ux-animations.png
-preview-video: basic-ux-animations.mp4
+preview-video: HyTHpMTi5MQ
 ---
 A few simple examples of how to create animations in response to user input with triggers and animators.
 

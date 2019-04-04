@@ -20,7 +20,7 @@ jsConcepts:
 - Observable
 - data-model
 preview-image: navigation-animation.png
-preview-video: navigation-animation.mp4
+preview-video: sSR9nwgsCUg
 ---
 In this example we are using `Entering-` and `ExitingAnimation` to make an interesting card swipe mechanism.
 

@@ -10,7 +10,7 @@ uxConcepts:
 - SwipeGesture
 - SwipingAnimation
 preview-image: swipe-toggle.png
-preview-video: swipe-toggle.mp4
+preview-video: hsYVqseWGT8
 ---
 In this example, we make a custom toggle control using `SwipeGesture` and `SwipingAnimation`.
 

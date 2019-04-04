@@ -26,7 +26,7 @@ jsConcepts:
 - Observable.replaceAll
 - data-binding
 preview-image: list-reordering.png
-preview-video: list-reordering.mp4
+preview-video: KaklNRdm9fU
 ---
 In this example we show how to create a drag-to-reorder behaviour on a list of items. This was made possible by the introduction of `IdentityKey` property on `Each` tag, which takes care of figuring out which items are where after a list has been modified.
 

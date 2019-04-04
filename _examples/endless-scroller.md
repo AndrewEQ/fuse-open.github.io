@@ -18,7 +18,7 @@ jsConcepts:
 - Observable.addAll
 - promises
 preview-image: endless-scroller.png
-preview-video: endless-scroller.mp4
+preview-video: GqRbP-Dqc6I
 ---
 This example demonstrates how we can create an endless scrolling list that removes elements as they scroll out of view.
 

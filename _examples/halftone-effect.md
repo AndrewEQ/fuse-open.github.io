@@ -20,7 +20,7 @@ jsConcepts:
 - Observable
 - Camera
 preview-image: halftone-effect.png
-preview-video: halftone-effect.mp4
+preview-video: 8SqN1tT3sg4
 ---
 Using the JavaScript Camera API, we create a small app that lets you take pictures with a halftone effect. The effect parameters can then be tweaked with some custom styled slider controls.
 

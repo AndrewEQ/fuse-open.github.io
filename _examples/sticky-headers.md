@@ -25,7 +25,7 @@ uxConcepts:
 - Each
 - UX Expressions
 preview-image: sticky-headers.png
-preview-video: sticky-headers.mp4
+preview-video: FXbVtU6RZLU
 ---
 This example shows how we can create sticky headers that hover at the top of the screen as we scroll the content. Pictures for this example are taken from [unsplash.com](https://unsplash.com/). Design inspiration: [Read App Interface](https://dribbble.com/shots/3335104-07-Read-App-Interface) by Kun-Li.
 

@@ -30,7 +30,7 @@ jsConcepts:
 - Observable
 - data-binding
 preview-image: alternative-dropdown.png
-preview-video: alternative-dropdown.mp4
+preview-video: pNDkvJXCXSU
 ---
 In this example we will create a button that serves as a good alternative to a dropdown.
 

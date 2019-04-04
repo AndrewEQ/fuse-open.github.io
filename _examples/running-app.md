@@ -16,7 +16,7 @@ uxConcepts:
 - ImageFill
 - Rotation
 preview-image: running-app.png
-preview-video: running-app.mp4
+preview-video: YYZJx7ntQpA
 ---
 We found [this excellent concept](https://dribbble.com/shots/3202189-Fitness-App-Concept) by [Tanya Brassie](https://dribbble.com/tanyabrassie) of [inCahoots](https://www.instagram.com/incahootsdesign), and decided to implement the design in Fuse.
 

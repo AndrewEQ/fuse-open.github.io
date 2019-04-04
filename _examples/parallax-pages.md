@@ -12,7 +12,7 @@ uxConcepts:
 - ScrollView
 - ScrollingAnimation
 preview-image: parallax-pages.png
-preview-video: parallax-pages.mp4
+preview-video: 9ErUtVTDGbk
 ---
 This example shows how you can create a neat parallax effect for pages in a `PageControl` using `EnteringAnimation`, `ExitingAnimation` and `ScrollingAnimation`.
 

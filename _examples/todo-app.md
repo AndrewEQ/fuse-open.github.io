@@ -20,7 +20,7 @@ jsConcepts:
 - Observable.add
 - Observable.remove
 preview-image: todo-app.png
-preview-video: todo-app.mp4
+preview-video: 9hqWXjZqyDA
 ---
 This example shows how one can make a simple todo-app with plenty of animations.
 

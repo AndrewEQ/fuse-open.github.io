@@ -4,9 +4,7 @@ layout: page
 <div class="example">
   {% if page.preview-video %}
   <div id="preview" class="w-100 bg-primary p-3 mb-4">
-    <video autoplay="true" loop="true" class="mx-auto d-block">
-      <source src="{{ site.baseurl }}/assets/videos/examples/{{ page.preview-video }}" type="video/mp4">
-    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.preview-video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     {% elsif  page.preview-image %}
     <img src="{{ site.baseurl }}/assets/images/examples/{{ page.preview-image }}" alt="{{ page.title }}">
     {% endif %}

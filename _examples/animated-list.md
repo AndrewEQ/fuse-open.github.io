@@ -19,7 +19,7 @@ jsConcepts:
 - Observable.add
 - observable.remove
 preview-image: animated-list.png
-preview-video: animated-list.mp4
+preview-video: yqxs52ofNvA
 ---
 This example shows how to use `AddingAnimation` and `RemovingAnimation` to animate items being added and removed in a list. `LayoutAnimation` is used to adjust the position of the other list items inside the `StackPanel`.
 

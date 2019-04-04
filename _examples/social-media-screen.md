@@ -18,7 +18,7 @@ jsConcepts:
 - fetch
 - promises
 preview-image: social-media-screen.png
-preview-video: social-media-screen.mp4
+preview-video: 8-JAbnLa3FQ
 ---
 Here we combine several different UX and JavaScript features to create a more involved app screen.
 

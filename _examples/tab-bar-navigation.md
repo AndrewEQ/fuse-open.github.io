@@ -22,7 +22,7 @@ uxConcepts:
 - Scale
 - NavigateTo
 preview-image: tab-bar-navigation.png
-preview-video: tab-bar-navigation.mp4
+preview-video: Z3Ggha_4Tck
 ---
 This example shows how to implement tab bar navigation using `PageControl`, `PageIndicator` and `GridLayout`.
 
