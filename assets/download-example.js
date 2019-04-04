@@ -1,4 +1,4 @@
-function downloadExample(example) {
+function downloadExample(element, example) {
   var prefix = 'https://api.github.com/repos/fuse-open/examples/contents/'
   var dir = 'examples/' + example + '/code/'
   var url = prefix + dir + '?ref=master'
@@ -16,6 +16,7 @@ function downloadExample(example) {
     })
   }
 
+  element.disabled = true
   github_subdir(url).then(result => {
     var zip = new JSZip()
     result.map(obj => {
@@ -25,5 +26,8 @@ function downloadExample(example) {
     return zip.generateAsync({type:'blob'})
   }).then(
     blob => saveAs(blob, example + '.zip'),
-    err => console.log(err))
+    err => console.log(err)
+  ).finally(() => {
+    element.disabled = false
+  })
 }
