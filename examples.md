@@ -3,13 +3,18 @@ layout: page
 title: All Examples
 permalink: /examples/
 ---
+
+
+<input id="searchInput" class="form-control form-control-lg mb-4" type="text" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+
+
 <div class="examples row">
   {% for example in site.examples reversed %}
-  <div class="col-6 col-lg-4 col-md-6 col-lg-3 pb-5">
+  <div data-id="{{example.id}}" class="example col-6 col-lg-4 col-md-6 col-lg-3 pb-5">
     <h4><a href="{{ example.url }}">{{ example.title }}</a></h4>
 
     {% if example.preview-image %}
-    <div class="bg-secondary p-3 mb-3">
+    <div class="bg-primary p-3 mb-3">
       <a href="{{ example.url }}">
         <img class="mw-100" src="{{ site.baseurl }}/assets/images/examples/{{ example.preview-image }}" alt="{{ example.title }}" />
       </a>
@@ -17,7 +22,79 @@ permalink: /examples/
     {% endif %}
 
     <p>{{ example.synopsis }}</p>
-    <p><a href="{{ example.url }}">Read full example</a></p>
+    <p><a href="{{ example.url }}">View full example</a></p>
   </div>
   {% endfor %}
+  
+  <!-- Not related in any way to Fuse Opens FuseJS btw -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.4/fuse.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+
+    //build the data list to search
+    var list = [
+    {% for example in site.examples reversed %}
+    {
+      id: "{{example.id}}",
+      title: "{{example.title}}",
+      date: "{{example.date}}",
+      tags: "{% for tag in example.tags %}{{ tag }},{% endfor %}",
+      uxConcepts: "{% for concept in example.uxConcepts %}{{ concept }},{% endfor %}",
+      jsConcepts: "{% for concept in example.jsConcepts %}{{ concept }},{% endfor %}"
+    },
+    {% endfor %}
+    ];
+    
+    //setup search options
+    var options = {
+      shouldSort: true,
+      includeScore: true,
+      threshold: 0.6,
+      location: 0,
+      distance: 100,
+      maxPatternLength: 32,
+      minMatchCharLength: 1,
+      keys: [
+        "id",
+        "title",
+        "date",
+        "tags",
+        "uxConcepts",
+        "jsConcepts",
+      ]
+    };
+
+    var fuse = new Fuse(list, options);
+    var result = [];
+    var i = 0;
+    $('#searchInput').keyup(function(e) {
+
+      //by default, display in original order
+      if ($('#searchInput').val() == '') {
+
+        //reorder examples
+        for (i = list.length-1; i >= 0; i--) {
+          $(".examples").prepend($(".example[data-id='" + list[i].id + "']"));
+        }
+
+        //show all examples
+        $('.example').show();
+      } else {
+        //hide all examples
+        $('.example').hide();
+        
+        //get examples search results
+        results = fuse.search($('#searchInput').val());
+
+        //reorder based on results
+        for (i = results.length-1; i >= 0; i--) {
+          $(".examples").prepend($(".example[data-id='" + results[i].item.id + "']"));
+          $(".example[data-id='" + results[i].item.id + "']").show();
+        }
+      }
+      
+    });
+  
+  });
+  </script>
 </div>
