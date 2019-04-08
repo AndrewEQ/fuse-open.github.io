@@ -49,8 +49,6 @@ p {
   font-size: 16px;
   a {
     color: $violet;
-    // font-style: italic;
-    // text-decoration: underline;
   }
 }
 hr {
@@ -263,8 +261,6 @@ header .navbar a:link, header .navbar a:active, header .navbar a:visited, header
 .page-content {
   li a {
     color: $violet;
-    // font-style: italic;
-    // text-decoration: underline;
   }
   margin: 50px 0px;
 }
@@ -326,7 +322,7 @@ button:disabled > .fa-download {
 }
 
 code {
-  color: #efa668;
+  color: #orange;
 }
 
 .btn-primary {

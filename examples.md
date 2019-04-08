@@ -67,10 +67,11 @@ permalink: /examples/
     var fuse = new Fuse(list, options);
     var result = [];
     var i = 0;
-    $('#searchInput').keyup(function(e) {
+    var searchInput = $('#searchInput');
+    searchInput.keyup(function(e) {
 
       //by default, display in original order
-      if ($('#searchInput').val() == '') {
+      if (searchInput.val() == '') {
 
         //reorder examples
         for (i = list.length-1; i >= 0; i--) {
@@ -84,7 +85,7 @@ permalink: /examples/
         $('.example').hide();
         
         //get examples search results
-        results = fuse.search($('#searchInput').val());
+        results = fuse.search(searchInput.val());
 
         //reorder based on results
         for (i = results.length-1; i >= 0; i--) {
