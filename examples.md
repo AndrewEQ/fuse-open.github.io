@@ -9,8 +9,9 @@ permalink: /examples/
 
 
 <div class="examples row">
-  {% for example in site.examples reversed %}
-  <div data-id="{{example.id}}" class="example col-6 col-lg-4 col-md-6 col-lg-3 pb-5">
+  {% assign examples = site.examples | reverse %}
+  {% for example in examples %}
+  <div data-id='{{example.id | split: "/" | last}}' class="example col-6 col-lg-4 col-md-6 col-lg-3 pb-5">
     <h4><a href="{{ example.url }}">{{ example.title }}</a></h4>
 
     {% if example.preview-image %}
@@ -33,14 +34,14 @@ permalink: /examples/
 
     //build the data list to search
     var list = [
-    {% for example in site.examples reversed %}
+    {% for example in examples %}
     {
-      id: "{{example.id}}",
-      title: "{{example.title}}",
-      date: "{{example.date}}",
-      tags: "{% for tag in example.tags %}{{ tag }},{% endfor %}",
-      uxConcepts: "{% for concept in example.uxConcepts %}{{ concept }},{% endfor %}",
-      jsConcepts: "{% for concept in example.jsConcepts %}{{ concept }},{% endfor %}"
+      id: {{ example.id | split: "/" | last | jsonify }},
+      title: {{ example.title | jsonify }},
+      date: {{ example.date | jsonify }},
+      tags: {{ example.tags | jsonify | join: ',' }},
+      uxConcepts: {{ example.uxConcepts | jsonify | join: ',' }},
+      jsConcepts: {{ example.jsConcepts | jsonify | join: ',' }}
     },
     {% endfor %}
     ];
